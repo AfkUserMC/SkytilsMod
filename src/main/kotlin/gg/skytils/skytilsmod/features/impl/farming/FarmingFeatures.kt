@@ -67,7 +67,7 @@ object FarmingFeatures {
             }
         }
         if (Skytils.config.trapperPing) {
-            if (unformatted.startsWith("[NPC] Trevor The Trapper: You can find your")) {
+            if (unformatted.startsWith("[NPC] Trevor: You can find your")) {
                 trapperCooldownExpire = System.currentTimeMillis() +
                         if (MayorInfo.currentMayor == "Finnegan") 30000 else 60000
                 animalFound = false
